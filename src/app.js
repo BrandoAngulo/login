@@ -35,9 +35,9 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
 //archivos estaticos recordar todo lo que referenciemos y le asignemos /public son archivos estaticos
-app.use(express.static('public'));
-app.use('/resources', express.static(__dirname + '/resources'));
-console.log(__dirname); 
+app.use('/project/public', express.static('public'));
+app.use('/project/public', express.static(__dirname + '/project/public'));
+console.log(__dirname);  
 
 //Establecer motor de plantillas Ejs
 app.set('view engine','ejs'); 
