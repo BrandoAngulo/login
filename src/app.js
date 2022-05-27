@@ -28,7 +28,7 @@ app.set("port", 4000);
 app.use(morgan("dev"));
 
 //llamar las Routes o rutas
-app.use("/project/login",login);
+app.use("/project",login);
 
 //seteamos urlencoded para capturar los datos del formulario y no tener errores
 app.use(express.urlencoded({extended:false}));
