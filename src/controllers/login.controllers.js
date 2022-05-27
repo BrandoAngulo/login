@@ -26,6 +26,7 @@ const viewIndex = async (req, res) => {
 }; 
 
 const viewRegister = async (req, res) => {
+    
     try {
         const connection = await getConnection();
         res.render('register');
