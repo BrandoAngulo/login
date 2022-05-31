@@ -10,29 +10,35 @@
 <body>
     <div class="register-form">
         <h1>Register user</h1>
-        <form  action="register" method="POST" >
-            <label for="user">User name</label>
-            <input class="user-name" id="name" name="name" type="text" placeholder="Name">
-            <label for="lastname">Lastname</label>
-            <input class="user-lastname" id="lastname" name="lastname" type="text" placeholder="Lastname">
+        <form  action="/register" method="POST" >
+            <label for="Nombre">Nombre</label>
+            <input class="user-name" id="Nombre" name="Nombre" type="text" placeholder="Nombre">
+            <label for="apellido">apellido</label>
+            <input class="user-lastname" id="apellido" name="apellido" type="text" placeholder="apellido">
             <label for="cedula">Cedula</label>
-            <input type="text" class="user-cc" name="cedula" id="cedula" placeholder="Cc">
-            <label for="Department">Department</label>
-            <input type="text" class="user-Department" name="Department" id="Department" placeholder="Department">
-            <label for="city">City</label>
-            <input type="text" class="user-city" name="city" id="city" placeholder="City">
-            <label for="adress">Adress</label>
-            <input type="text" class="user-Dir" name="Direccion" id="Direccion" placeholder="Direccion">
-            <label for="email">Email</label>
-            <input type="email" class="user-email" name="email" id="email" placeholder="Email">
-            <label for="cell">Cell</label>
+            <input type="text" class="user-cc" name="cedula" id="cedula" placeholder="cedula">
+            <label for="Departmento">Departmento</label>
+            <input type="text" class="user-Department" name="Departmento" id="Departmento" placeholder="Departmento">
+            <label for="ciudad">ciudad</label>
+            <input type="text" class="user-city" name="ciudad" id="ciudad" placeholder="ciudad">
+            <label for="direccion">direccion</label>
+            <input type="text" class="user-Dir" name="direccion" id="direccion" placeholder="direccion">
+            <label for="correo">correo</label>
+            <input type="email" class="user-email" name="correo" id="correo" placeholder="correo">
+            <label for="celular">celular</label>
             <input type="number" class="user-cell" name="celular" id="celular" placeholder="Numero Celular">
-            <label for="referred">Referred</label>
-            <input type="text" class="user-referido" name="referido" id="referido" placeholder="Referred">
+            <label for="referido">referido</label>
+            <input type="text" class="user-referido" name="referido" id="referido" placeholder="referido">
             <label for="rol">Rol</label>
-            <input type="number" class="user-rol" name="rol" id="rol" placeholder="Rol">
+            <select name="rol" id="rol" class="user-rol">
+                <option value="1">Admin</option>
+                <option value="2">Sales</option>
+                <option value="3">Client</option>
+            </select>
+            <label for="pass">Contraseña</label>
+            <input type="password" class="user-pass" name="pass" id="pass" placeholder="contraseña">
             <div class="">
-            <input  type="save" class="btn-enviar" value="Save User " id="save">
+            <input  type="submit" class="btn-enviar" value="Save User " name="save" id="save">
             </div>
         </form>
     </div>

@@ -2,8 +2,7 @@ import express from "express";
 import morgan from 'morgan';
 //importar archivo dnde se ubica la Ruta
 import login from "./routes/login.routes";
-//invocar bcryptjs, es el modulo de hashin de password
-import bcryptjs from "bcryptjs";
+
 //creamos constante para hacer uso de brcyptjs
 //const bcryptjs = bcryptjs();
 //inportamos las variables de session y hacemos uso de ella

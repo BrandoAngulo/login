@@ -20,7 +20,7 @@ body {
 
 /* estilos de los inputs */
 .login-form input[type="password"],
-.login-form input[type="text"], .register-form input[type="text"], .user-email, .user-rol, .user-cell {
+.login-form input[type="text"], .register-form input[type="text"], .user-email, .user-rol, .user-cell, .user-pass {
     width: 100%;
     padding: 15px;
     border: 1px solid #ced4da;
